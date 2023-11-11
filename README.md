@@ -1,7 +1,7 @@
 Automation suite which consists of
 	 i. Sanity Test Cases
 	ii. Regression Test Cases
-   iii. In-Sprint Test Cases
+       iii. In-Sprint Test Cases
    
 and the entire package will be stored in GitHub and executed thourgh Kubernetes Container in Headless Mode. 
 Test Results will be auto uploaded for Regression cases in JIRA if the user opted
