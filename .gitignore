@@ -1,0 +1,11 @@
+/target/
+/TestReport/
+/test-output/
+_template*
+/debug.log
+/ConsolidatedTestReport/
+**/src/test/resources/Features/Parallel/
+**/src/test/java/parallel/runners/
+/*.zip
+/.idea/
+*.iml

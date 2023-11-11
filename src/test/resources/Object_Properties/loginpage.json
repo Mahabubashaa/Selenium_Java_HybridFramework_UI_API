@@ -1,0 +1,13 @@
+{
+"loginpage_UserName" : "xpath|//input[@id='signin-username-field']",
+"loginpage_Password" : "xpath|//input[@id='signin-password-field']",
+"loginpage_Submit" : "xpath|//button[@id='signin-login-button']",
+"loginpage_Override" : "xpath|//a[@id='overridelink']",
+"loginpage_Advanced" : "xpath|//button[@id='details-button']",
+"loginpage_ProceedLink" : "xpath|//a[@id='proceed-link']",
+
+
+"loginpage_Alerticon":"xpath|//button[@class='notification-icon-btn']",
+"loginpage_userLink" : "xpath|//button[@class='mat-focus-indicator mat-menu-trigger user-menu-button mat-menu-item']"
+
+}

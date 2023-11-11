@@ -1,0 +1,36 @@
+package parallel.runners;
+
+import java.io.IOException;
+
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import com.lloyds.IPP.StepDefinitions.BasicDefinition;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.CucumberOptions.SnippetType;
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions
+(
+		features = {"src/test/resources/Features/Parallel/[CUCABLE:FEATURE].feature"}
+		 ,glue={"classpath:StepDefinitions"}
+		 ,monochrome=true
+		 ,publish = true
+		 ,snippets = SnippetType.UNDERSCORE
+		 ,plugin = {"json:TestReport/[CUCABLE:RUNNER].json",
+		 			"com.lloyds.IPP.lloydsReport.JIRAReport:TestReport/Report.json",
+		 			"html:TestReport/[CUCABLE:RUNNER].html"} 
+)
+
+public class [CUCABLE:RUNNER] {
+	
+	@BeforeClass
+	public static void generateXLMap() throws IOException{
+		BasicDefinition.generateMap();
+}
+
+
+
+	
+	}
